@@ -2,4 +2,5 @@
 
 # https://publicapis.dev/category/cryptocurrency
 
-# Possible Style Sheets (lux?) https://www.bootstrapcdn.com/bootswatch/
+# Possible Style Sheets https://www.bootstrapcdn.com/bootswatch/
+#lux: https://bootswatch.com/lux/
