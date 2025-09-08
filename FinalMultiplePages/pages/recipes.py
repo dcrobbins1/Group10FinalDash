@@ -6,7 +6,7 @@ import pandas as pd
 from data_api.spoonacular_api import get_recipes_by_ingredient, get_nutrition
 
 layout = html.Div([
-    html.H2("Recipe Finder 🍲"),
+    html.H2("Recipe Finder"),
     dcc.Input(id="ingredient-input", type="text", placeholder="Enter a main ingredient"),
     html.Button("Search", id="search-button"),
     html.Div(id="recipe-results"),
