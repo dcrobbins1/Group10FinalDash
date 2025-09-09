@@ -64,4 +64,5 @@ Generative AI (ChatGPT) was used to assist with:
 - Designing helper functions to fetch and process API data
 - Formatting page layouts and styling with Dash/Bootstrap components
 - Troubleshooting coding issues
+- Improve layout on README.md
 All code was reviewed, tested, and modified by the team to ensure correctness and understanding.
