@@ -1,5 +1,3 @@
-#about us - daniel
-
 import dash
 from dash import html
 
@@ -13,43 +11,56 @@ layout = html.Div(
         html.Div(
             className="team-container",
             children=[
-                # jessie
+                # Jessie
                 html.Div(
                     className="team-card",
                     children=[
-                        html.Img(src="Group10FinalDash/FinalMultiplePages/assets/JL.jpg", className="team-photo"),
                         html.H3("Jessie Lin", className="team-name"),
-                        html.P("Jessie is an MSBA student at William & Mary's Raymond A. Mason School of Business. Jessie completed her Bachelor of Arts degree at William & Mary in 2025 where she majored in Economics and Government.", className="team-bio"),
+                        html.P(
+                            "Jessie is an MSBA student at William & Mary's Raymond A. Mason School of Business. "
+                            "Jessie completed her Bachelor of Arts degree at William & Mary in 2025 where she majored in Economics and Government.",
+                            className="team-bio"
+                        ),
                     ],
                 ),
 
-                # redeemer
+                # Redeemer
                 html.Div(
                     className="team-card",
                     children=[
-                        html.Img(src="Group10FinalDash/FinalMultiplePages/assets/RG.jpg", className="team-photo"),
                         html.H3("Redeemer Gawu", className="team-name"),
-                        html.P("Redeemer is an MSBA student at William & Mary's Raymond A. Mason School of Business. Redeemer completed his Bachelor of Science in Business Administration degree at Kwame Nkrumah University of Science and Technology in 2018 where he majored in Accounting. He went further to attain a Master's degree in financial economics at Ohio University in 2022.", className="team-bio"),
+                        html.P(
+                            "Redeemer is an MSBA student at William & Mary's Raymond A. Mason School of Business. "
+                            "Redeemer completed his Bachelor of Science in Business Administration degree at Kwame Nkrumah University of Science and Technology in 2018 where he majored in Accounting. "
+                            "He went further to attain a Master's degree in financial economics at Ohio University in 2022.",
+                            className="team-bio"
+                        ),
                     ],
                 ),
 
-                # thirtha
+                # Thirtha
                 html.Div(
                     className="team-card",
                     children=[
-                        html.Img(src="Group10FinalDash/FinalMultiplePages/assets/TPU.jpg", className="team-photo"),
                         html.H3("Thirtha Poruthikode Unnivelan", className="team-name"),
-                        html.P("Thirtha is an MSBA student at William & Mary's Raymond A. Mason School of Business. She graduated from the College of William & Mary in 2025 with a Bachelor of Arts degree in International Relations with a minor in Gender, Sexuality, & Women's Studies.", className="team-bio"),
+                        html.P(
+                            "Thirtha is an MSBA student at William & Mary's Raymond A. Mason School of Business. "
+                            "She graduated from the College of William & Mary in 2025 with a Bachelor of Arts degree in International Relations with a minor in Gender, Sexuality, & Women's Studies.",
+                            className="team-bio"
+                        ),
                     ],
                 ),
 
-                # daniel
+                # Daniel
                 html.Div(
                     className="team-card",
                     children=[
-                        html.Img(src="Group10FinalDash/FinalMultiplePages/assets/DCR.jpg", className="team-photo"),
                         html.H3("Daniel Connor Robbins", className="team-name"),
-                        html.P("Daniel is an MSBA student at William & Mary's Raymond A. Mason School of Business. Daniel completed his Bachelor of Arts degree at William & Mary in 2025 where he majored in International Relations and Global Business.", className="team-bio"),
+                        html.P(
+                            "Daniel is an MSBA student at William & Mary's Raymond A. Mason School of Business. "
+                            "Daniel completed his Bachelor of Arts degree at William & Mary in 2025 where he majored in International Relations and Global Business.",
+                            className="team-bio"
+                        ),
                     ],
                 ),
             ],
