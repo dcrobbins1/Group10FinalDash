@@ -14,9 +14,9 @@ The app has three sections:
 ## Data Sources and Data Dictionary
 1. Recipes Data
 - Source: [TheMealDB API](https://www.themealdb.com/api.php)
-* Endpoint(s) used:
-  Filter by ingredient: /filter.php?i=<ingredient>
-  Lookup meal details: /lookup.php?i=<meal_id>
+- Endpoint(s) used:
+- To filter by ingredient: /filter.php?i=<ingredient>
+- To lookup meal details: /lookup.php?i=<meal_id>
 
 Returned Fields:
 | Field                              | Description                                   |
@@ -34,8 +34,8 @@ Returned Fields:
 2. Brewery Data
 - Source: [Open Brewery DB API](https://www.openbrewerydb.org/)
 - Endpoint(s) used:
-- Search by city: /breweries?by_city=<city>
-- Sort by distance: /breweries?by_dist=<lat,lon>
+- To search by city: /breweries?by_city=<city>
+- To sort by distance: /breweries?by_dist=<lat,lon>
 
 Returned Fields:
 | Field          | Description                                      |
