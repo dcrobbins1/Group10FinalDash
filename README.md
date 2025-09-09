@@ -15,5 +15,5 @@ This project is a multi-page Dash web app that helps users explore food and drin
 
 The app has three sections:
 1. **Home Page** – Overview and navigation.  
-2. **Recipes Page** – Input an ingredient to see a list of recipes. Each recipe includes a button that displays a nutrition chart.  
+2. **Recipes Page** – Input an ingredient to see a list of recipes.
 3. **Breweries Page** – Enter a city to view breweries nearby, along with interactive visualizations.  
