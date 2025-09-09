@@ -11,6 +11,8 @@ The app has three sections:
 2. **Recipes Page** – Input an ingredient to see a list of recipes.
 3. **Breweries Page** – Enter a city to view breweries nearby, along with interactive visualizations.
 
+## How to run
+
 ## Data Sources & Data Dictionary
 
 ### 1. Recipes Data
