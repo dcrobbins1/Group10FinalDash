@@ -8,21 +8,21 @@ register_page(__name__, path="/alcohol", name="Alcohol Stats")
 
 # Load Data
 DataPath = Path(__file__).resolve().parent.parent / "data" / "drinks.csv"
-df = pd.read_csv(DataPath)
+df1 = pd.read_csv(DataPath)
 
 # Convert litres to gallons
-df["total_gallons"] = df["total_litres_of_pure_alcohol"] * 0.264172
+df1["total_gallons"] = df1["total_litres_of_pure_alcohol"] * 0.264172
 
 # Get top 10 countries by alcohol consumption
-top10 = df.sort_values("total_gallons", ascending=False).head(10)
+top10 = df1.sort_values("total_gallons", ascending=False).head(10)
 
 # Check if United States is in top 10
-us_row = df[df["country"] == "USA"]
+us_row = df1[df1["country"] == "USA"]
 if not us_row.empty and "USA" not in top10["country"].values:
     top10 = pd.concat([top10, us_row])
 
 # Rebuild chart with filtered data
-fig = px.bar(
+fig1 = px.bar(
     top10.sort_values("total_gallons", ascending=False),
     x="country",
     y="total_gallons",
@@ -84,19 +84,21 @@ layout = html.Div([
         className="info-paragraph"
     ),
 
-    dcc.Graph(figure=fig),
+    dcc.Graph(figure=fig1),
+
     html.Div([
-    html.H2("Alcohol Consumption Within the US", className="heading", style={'textAlign': 'center'}),
+        html.H2("Alcohol Consumption Within the US", className="heading", style={'textAlign': 'center'}),
 
-    html.P(
-        "This choropleth chart shows the average annual alcohol consumption per person by state (2023).",
-        className="info-paragraph"
-    ),
+        html.P(
+            "This choropleth chart shows the average annual alcohol consumption per person by state (2023).",
+            className="info-paragraph"
+        ),
 
-    dcc.Graph(figure=fig),
+        dcc.Graph(figure=fig),
 
-    html.A("Back to Home", href="/", className="nav-link"),
+        html.A("Back to Home", href="/", className="nav-link"),
 
-    html.Div("Source: FiveThirtyEight / WHO", className="source-note"),
-    html.Div("Source: World Population Review", className="source-note")
-], className="page-container")
+        html.Div("Source: FiveThirtyEight / WHO", className="source-note"),
+        html.Div("Source: World Population Review", className="source-note")
+    ], className="page-container")
+])
