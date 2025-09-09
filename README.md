@@ -13,7 +13,7 @@ The app has three sections:
 
 ## How to Run
 
-You can access the live app here: [Food & Drinks Exploreer]()
+You can access the live app here: [Food & Drinks Explorer](https://group10finaldash-2.onrender.com/)
 
 ### Using the Live App
 1. Open the link above in any web browser.  
