@@ -6,14 +6,16 @@ This project is a multi-page Dash web app that helps users explore food and drin
 - **Audience**: Everyday cooks, food enthusiasts, and anyone interested in exploring nearby breweries.  
 - **Value**: The app combines recipe suggestions and brewery search in one convenient, user-friendly interface. It reduces time spent searching, helps reduce food waste by using existing ingredients, and connects users with local breweries.
 
-The app has three sections:
+The app has five sections:
 1. **Home Page** – Overview and navigation.  
 2. **Recipes Page** – Input an ingredient to see a list of recipes.
 3. **Breweries Page** – Enter a city to view breweries nearby, along with interactive visualizations.
+4. **Alcohol Statistics** - Explore alcohol statistics globally and across states.
+5. **About us** - Learn about the developers
 
 ## How to Run
 
-You can access the live app here: [Food & Drinks Explorer](https://group10finaldash-2.onrender.com/)
+Use link to access live app via Render
 
 ### Using the Live App
 1. Open the link above in any web browser.  
