@@ -27,7 +27,9 @@ app.layout = dbc.Container([
     dbc.Nav(
         [
             dbc.NavLink("Home", href="/", active="exact"),
-            dbc.NavLink("About", href="/about",active="exact"),
+            dbc.NavLink("Recipes", href="/recipes",active="exact"),
+            dbc.NavLink("Brewery", href="/brewery",active="exact"),
+            dbc.NavLink("About Us", href="/about",active="exact"),
         ],
         pills=True,
         justified=True,
