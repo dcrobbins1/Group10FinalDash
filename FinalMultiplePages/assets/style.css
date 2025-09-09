@@ -328,3 +328,65 @@ body {
 }
 
 
+
+
+/* About Page Container */
+.about-container {
+  padding: 40px;
+  background-color: var(--ink);
+  color: var(--linen);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Page Title */
+.about-title {
+  font-size: clamp(2rem, 1.5rem + 2vw, 2.8rem);
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: center;
+  color: var(--sand);
+  letter-spacing: 0.5px;
+}
+
+/* Team Section Layout */
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Team Member Card */
+.team-card {
+  background-color: rgba(199, 189, 177, 0.12);
+  border: 1px solid rgba(221, 217, 214, 0.18);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  width: 280px;
+  padding: 20px;
+  text-align: center;
+  backdrop-filter: blur(2px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Team Member Name */
+.team-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--oak);
+  margin-bottom: 10px;
+}
+
+/* Team Member Bio */
+.team-bio {
+  font-size: 0.95rem;
+  color: var(--linen);
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
