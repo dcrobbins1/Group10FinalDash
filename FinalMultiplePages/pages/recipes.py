@@ -2,10 +2,10 @@ from dash import html, dcc, Input, Output, State, callback
 import plotly.express as px
 import pandas as pd
 
-register_page(__name__,path="/recipes", name="recipes")
+dash.register_page(__name__,path="/recipes", name="recipes")
 
 # import your helper functions
-from data_api.spoonacular_api import get_recipes_by_ingredient, get_nutrition
+from data.spoonacular_api import get_recipes_by_ingredient, get_nutrition
 
 layout = html.Div([
     html.H2("Recipe Finder"),
