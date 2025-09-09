@@ -379,7 +379,7 @@ body {
 .team-name {
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--oak);
+  color: var(--white);
   margin-bottom: 10px;
 }
 
@@ -390,3 +390,4 @@ body {
   line-height: 1.6;
   opacity: 0.9;
 }
+
