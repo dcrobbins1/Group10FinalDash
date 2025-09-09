@@ -13,7 +13,7 @@ app.layout = dbc.Container([
             dbc.NavLink("Home", href="/", active="exact"),
             dbc.NavLink("About", href="/about",active="exact"),
             dbc.NavLink("Recipes", href="/recipes",active="exact"),
-            dbc.NavLink("Page2", href="/page2",active="exact"),
+            dbc.NavLink("Breweries", href="/breweries",active="exact"),
             for page in dash.page_registry.values()
         ],
         pills=True,
