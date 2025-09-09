@@ -1,4 +1,4 @@
-# Food & Drinks Explorer 🍴🍺
+# Food & Drinks Explorer
 
 ## Project Overview
 This project is a multi-page Dash web app that helps users explore food and drink options interactively.  
