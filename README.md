@@ -11,7 +11,23 @@ The app has three sections:
 2. **Recipes Page** – Input an ingredient to see a list of recipes.
 3. **Breweries Page** – Enter a city to view breweries nearby, along with interactive visualizations.
 
-## How to run
+## How to Run
+
+You can access the live app here: [Food & Drinks Exploreer]()
+
+### Using the Live App
+1. Open the link above in any web browser.  
+2. Navigate through the app using the tabs:
+   - **Home** – Overview of the app.
+   - **Recipes** – Search for recipes by ingredient.
+   - **Brewery** – Find breweries by city or distance.
+   - **Alcohol Statistics** - Discover alcohol statistics across countries and states
+   - **About Us** - Learn about the developers
+3. Enter input values (e.g., ingredient or city) and interact with the app! Results will update dynamically.
+
+### Running Locally (Optional)
+If you want to run the app locally:
+1. Clone the Github repository
 
 ## Data Sources & Data Dictionary
 
