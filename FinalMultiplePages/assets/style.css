@@ -9,10 +9,10 @@
 
 
 
-/* About page styling*/
+/* about us page styling*/
 
 
-/* Container for the whole About page */
+/* container for the about us page */
 .about-container {
     padding: 40px;
     background-color: #f8f9fa;
@@ -20,7 +20,7 @@
     font-family: "Segoe UI", "Helvetica Neue", sans-serif;
 }
 
-/* Page title */
+/* page title */
 .about-title {
     font-size: 2.5rem;
     font-weight: 600;
@@ -29,7 +29,7 @@
     color: #343a40;
 }
 
-/* Team section layout */
+/* team section layout */
 .team-container {
     display: flex;
     flex-wrap: wrap;
@@ -37,7 +37,7 @@
     gap: 30px;
 }
 
-/* Individual team member card */
+/* individual team member card */
 .team-card {
     background-color: #ffffff;
     border: 1px solid #dee2e6;
@@ -53,7 +53,7 @@
     transform: translateY(-5px);
 }
 
-/* Team member photo */
+/* team member photo */
 .team-photo {
     width: 120px;
     height: 120px;
@@ -63,7 +63,7 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Team member name */
+/* team member name */
 .team-name {
     font-size: 1.25rem;
     font-weight: 500;
@@ -71,7 +71,7 @@
     margin-bottom: 10px;
 }
 
-/* Team member bio */
+/* team member bio */
 .team-bio {
     font-size: 0.95rem;
     color: #495057;
