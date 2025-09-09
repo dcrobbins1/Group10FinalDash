@@ -19,7 +19,7 @@ layout = html.Div(
                     children=[
                         html.Img(src="Group10FinalDash/FinalMultiplePages/assets/JL.jpg", className="team-photo"),
                         html.H3("Jessie Lin", className="team-name"),
-                        html.P("xxxx", className="team-bio"),
+                        html.P("Jessie is an MSBA student at William & Mary's Raymond A. Mason School of Business. Jessie completed her Bachelor of Arts degree at William & Mary in 2025 where she majored in Economics and Government.", className="team-bio"),
                     ],
                 ),
 
@@ -39,7 +39,7 @@ layout = html.Div(
                     children=[
                         html.Img(src="Group10FinalDash/FinalMultiplePages/assets/TPU.jpg", className="team-photo"),
                         html.H3("Thirtha Poruthikode Unnivelan", className="team-name"),
-                        html.P("xxx", className="team-bio"),
+                        html.P("Thirtha is an MSBA student at William & Mary's Raymond A. Mason School of Business. She graduated from the College of William & Mary in 2025 with a Bachelor of Arts degree in International Relations with a minor in Gender, Sexuality, & Women's Studies.", className="team-bio"),
                     ],
                 ),
 
