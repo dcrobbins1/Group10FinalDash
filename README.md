@@ -28,6 +28,8 @@ You can access the live app here: [Food & Drinks Exploreer]()
 ### Running Locally (Optional)
 If you want to run the app locally:
 1. Clone the Github repository [Github Repo](https://github.com/dcrobbins1/Group10FinalDash.git)
+2. Open VSCode and Ctrl Shift P -> click Git Clone and input link
+3. Run program
 
 ## Data Sources & Data Dictionary
 
