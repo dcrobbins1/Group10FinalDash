@@ -72,7 +72,7 @@ fig.update_layout(
 
 # Layout
 layout = html.Div([
-    html.H2("Alcohol Consumption Around the World", className="heading"),
+    html.H2("Alcohol Consumption Around the World", className="heading",style={'textAlign': 'center'}),
 
     html.P(
         "This chart shows the top 10 countries by average annual alcohol consumption per person, converted to gallons.",
