@@ -79,7 +79,8 @@ If you want to run the app locally:
 | `longitude` | Longitude of brewery location |
 
 ### 3. Alcohol Data
-- **Source:** (https://github.com/datasets/five-thirty-eight-datasets/blob/main/datasets/alcohol-consumption/data/drinks.csv?plain=1)
+- **Source 1:** (https://github.com/datasets/five-thirty-eight-datasets/blob/main/datasets/alcohol-consumption/data/drinks.csv?plain=1)
+- **Source 2:** (https://worldpopulationreview.com/state-rankings/alcohol-consumption-by-state)
 
 ## AI Statement:
 Generative AI (ChatGPT) was used to assist with:
