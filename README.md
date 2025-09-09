@@ -15,8 +15,8 @@ The app has three sections:
 1. Recipes Data
 - Source: TheMealDB API
 * Endpoint(s) used:
-* Filter by ingredient: /filter.php?i=<ingredient>
-* Lookup meal details: /lookup.php?i=<meal_id>
+  Filter by ingredient: /filter.php?i=<ingredient>
+  Lookup meal details: /lookup.php?i=<meal_id>
 
 Returned Fields:
 | Field                              | Description                                   |
