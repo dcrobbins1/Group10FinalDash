@@ -10,7 +10,10 @@ app.layout = dbc.Container([
     html.H1("Food & Drinks Explorer", className="text-center my-3"),
     dbc.Nav(
         [
-            dbc.NavLink(page["name"], href=page["path"], active="exact")
+            dbc.NavLink("Home", href="/", active="exact"),
+            dbc.NavLink("About", href="/about",active="exact"),
+            dbc.NavLink("Recipes", href="/recipes",active="exact"),
+            dbc.NavLink("Page2", href="/page2",active="exact"),
             for page in dash.page_registry.values()
         ],
         pills=True,
