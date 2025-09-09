@@ -13,7 +13,7 @@ The app has three sections:
 
 ## Data Sources and Data Dictionary
 1. Recipes Data
-- Source: TheMealDB API
+- Source: [TheMealDB API] (https://www.themealdb.com/api.php)
 * Endpoint(s) used:
   Filter by ingredient: /filter.php?i=<ingredient>
   Lookup meal details: /lookup.php?i=<meal_id>
@@ -32,7 +32,7 @@ Returned Fields:
 | `strMeasure1`–`strMeasure20`       | Amounts for each ingredient                   |
 
 2. Brewery Data
-- Source: Open Brewery DB API
+- Source: [Open Brewery DB API] (https://www.openbrewerydb.org/)
 - Endpoint(s) used:
 - Search by city: /breweries?by_city=<city>
 - Sort by distance: /breweries?by_dist=<lat,lon>
