@@ -290,7 +290,7 @@ body {
   padding: 40px;
 
   /* visuals */
-  background-color: #111827;  /* dark slate */
+  background-color: rgba(199, 189, 177, 0.12);  /* dark slate */
   color: #e5e7eb;             /* light text */
   font-family: "Segoe UI", "Helvetica Neue", sans-serif;
   border: 1px solid #374151;
@@ -387,5 +387,6 @@ body {
   line-height: 1.6;
   opacity: 0.9;
 }
+
 
 
