@@ -17,6 +17,7 @@ The app has three sections:
 - Endpoint(s) used:
 - Filter by ingredient: /filter.php?i=<ingredient>
 - Lookup meal details: /lookup.php?i=<meal_id>
+
 Returned Fields:
 | Field                              | Description                                   |
 | ---------------------------------- | --------------------------------------------- |
@@ -35,6 +36,7 @@ Returned Fields:
 - Endpoint(s) used:
 - Search by city: /breweries?by_city=<city>
 - Sort by distance: /breweries?by_dist=<lat,lon>
+
 Returned Fields:
 | Field          | Description                                      |
 | -------------- | ------------------------------------------------ |
