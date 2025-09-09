@@ -296,14 +296,14 @@ body {
   font-family: "Segoe UI", "Helvetica Neue", sans-serif;
 
   /* override any inherited centering from Bootstrap parents */
-  text-align: left;
+  text-align: left !important;
 }
 
 #home > h2 {
   font-size: 36px;        /* px per your preference */
   font-weight: 600;
   margin-bottom: 20px;
-  text-align: left;
+  text-align: left !important;
   color: #343a40;
 }
 
