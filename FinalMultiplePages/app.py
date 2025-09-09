@@ -12,7 +12,7 @@ server = app.server
 ##            dbc.NavLink("Home", href="/", active="exact"),
   #          dbc.NavLink("About", href="/about",active="exact"),
   #          dbc.NavLink("Recipes", href="/recipes",active="exact"),
-  #          dbc.NavLink("Brewery", href="/brewery",active="exact"),
+  #          dbc.NavLink("Brewery", href="/brew",active="exact"),
    #         for page in dash.page_registry.values()
    #     ],
    #     pills=True,
@@ -41,4 +41,5 @@ app.layout = dbc.Container([
 
 
 if __name__ == "__main__":
+
     app.run(debug=True)
