@@ -278,3 +278,52 @@ body {
     line-height: 1.5;
 
 }
+
+
+
+
+/* Home page: full-width, left-aligned */
+#home {
+  /* layout */
+  margin: 0;              /* remove centering */
+  max-width: 100%;        /* don't constrain width */
+  width: 100%;
+  padding: 40px;
+
+  /* visuals (optional, keep if you like) */
+  background-color: #f8f9fa;
+  color: #212529;
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+
+  /* override any inherited centering from Bootstrap parents */
+  text-align: left !important;
+}
+
+#home > h2 {
+  font-size: 36px;        /* px per your preference */
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: left !important;
+  color: #343a40;
+}
+
+#home > p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #212529;
+}
+
+/* gentle spacing for the stacked lines */
+#home > p:nth-of-type(2),
+#home > p:nth-of-type(3) {
+  margin-top: 6px;
+}
+
+/* subtext line */
+#home > p:last-of-type {
+  margin-top: 12px;
+  font-size: 16px;
+  color: #495057;
+}
+
