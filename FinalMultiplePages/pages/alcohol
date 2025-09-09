@@ -13,6 +13,9 @@ df = pd.read_csv(DataPath)
 # Convert to gallons
 df["total_gallons"] = df["total_litres_of_pure_alcohol"] * 0.264172
 
+# Sort by total_gallons descending and take top 10
+top10 = df.sort_values("total_gallons", ascending=False).head(10)
+
 fig = px.bar(
     df.sort_values("total_gallons", ascending=False),
     x="country",
