@@ -56,6 +56,8 @@ The app has three sections:
 | `latitude` | Latitude of brewery location |
 | `longitude` | Longitude of brewery location |
 
+### 3. Alcohol Data
+- **Source:** (https://github.com/datasets/five-thirty-eight-datasets/blob/main/datasets/alcohol-consumption/data/drinks.csv?plain=1)
 
 ## AI Statement:
 Generative AI (ChatGPT) was used to assist with:
