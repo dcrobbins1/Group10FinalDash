@@ -12,7 +12,7 @@ The app has three sections:
 3. **Breweries Page** – Enter a city to view breweries nearby, along with interactive visualizations.  
 
 
-# AI Statement:
+## AI Statement:
 Generative AI (ChatGPT) was used to assist with:
 - Brainstorming the overall structure and layout of the multi-page Dash app
 - Writing callbacks for recipe search and nutrition chart functionality
