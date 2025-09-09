@@ -14,9 +14,9 @@ The app has three sections:
 ## Data Sources and Data Dictionary
 1. Recipes Data
 - Source: [TheMealDB API](https://www.themealdb.com/api.php)
-- Endpoint(s) used:
-- To filter by ingredient: /filter.php?i=<ingredient>
-- To lookup meal details: /lookup.php?i=<meal_id>
+API Endpoints used:
+/filter.php?i=<ingredient> — Returns a list of recipes containing the ingredient.
+/lookup.php?i=<meal_id> — Returns detailed information for a specific recipe.
 
 Returned Fields:
 | Field                              | Description                                   |
