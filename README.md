@@ -10,3 +10,13 @@ The app has three sections:
 1. **Home Page** – Overview and navigation.  
 2. **Recipes Page** – Input an ingredient to see a list of recipes.
 3. **Breweries Page** – Enter a city to view breweries nearby, along with interactive visualizations.  
+
+
+# AI Statement:
+Generative AI (ChatGPT) was used to assist with:
+- Brainstorming the overall structure and layout of the multi-page Dash app
+- Writing callbacks for recipe search and nutrition chart functionality
+- Designing helper functions to fetch and process API data
+- Formatting page layouts and styling with Dash/Bootstrap components
+- Troubleshooting import and page routing issues
+All code was reviewed, tested, and modified by the team to ensure correctness and understanding.
