@@ -85,10 +85,10 @@ If you want to run the app locally:
 ## AI Statement:
 Generative AI (ChatGPT) was used to assist with:
 - Brainstorming the overall structure and layout of the multi-page Dash app
-- Writing callbacks for recipe search and brewery search functionality
+- Refining callbacks for recipe search and brewery search functionality
 - Designing helper functions to fetch and process API data
 - Formatting page layouts and styling with Dash/Bootstrap components
 - Troubleshooting coding issues
-- Improve layout on README.md
+- Improving layout on README.md
 
 All code was reviewed, tested, and modified by the team to ensure correctness and understanding.
