@@ -1,10 +1,210 @@
+/* ===============================
+  Brew Color palette:
+   --ink:        #161412
+   --oak:        #5a473a
+   --sand:       #c7bdb1
+   --linen:      #ddd9d6
+   --white:      #ffffff
+   =============================== */
+:root {
+  --ink: #161412;
+  --oak: #5a473a;
+  --sand: #c7bdb1;
+  --linen: #ddd9d6;
+  --white: #ffffff;
 
+  --radius-lg: 18px;
+  --radius-md: 12px;
+  --radius-sm: 8px;
 
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+  --shadow-md: 0 6px 20px rgba(0,0,0,0.12);
+}
 
+/* page baseline */
+body {
+  background: linear-gradient(180deg, var(--ink), #201d1a 30%, var(--ink) 100%);
+  color: var(--linen);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+  line-height: 1.5;
+}
 
+/* Scope most styling to the Brew page wrapper to avoid side effects */
+.page2-grid {
+  max-width: 1100px;
+  margin: 48px auto 72px auto;
+  padding: 0 20px;
+  display: grid;
+  gap: 24px;
+}
 
+/* top block block card style */
+.block {
+  background: rgba(199, 189, 177, 0.12); /* translucent sand */
+  border: 1px solid rgba(221, 217, 214, 0.18); /* linen edge */
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  box-shadow: var(--shadow-sm);
+  backdrop-filter: blur(3px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
 
+.block:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(221, 217, 214, 0.32);
+}
 
+/* Top row */
+.block-top {
+  text-align: center;
+  padding: 28px 22px;
+}
+
+.block-top h2 {
+  margin: 0;
+  color: var(--linen);
+  letter-spacing: 0.3px;
+  font-size: clamp(1.6rem, 1.2rem + 1.5vw, 2.2rem);
+}
+
+/* middle columns */
+.row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+/* footer */
+.block-footer {
+  font-size: 0.95rem;
+  color: var(--sand);
+  text-align: center;
+  background: rgba(90, 71, 58, 0.15); /* oak wash */
+  border: 1px solid rgba(90, 71, 58, 0.35);
+}
+
+/* section headings & text */
+.block h3 {
+  margin-top: 4px;
+  margin-bottom: 8px;
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+.block p {
+  margin-top: 0;
+  margin-bottom: 14px;
+  color: var(--linen);
+  opacity: 0.95;
+}
+
+/* inputs */
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--white);
+  color: var(--ink);
+  border: 1.5px solid var(--sand);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  margin-bottom: 12px;
+}
+
+.input::placeholder {
+  color: #8c8379;
+}
+
+.input:focus {
+  border-color: var(--oak);
+  box-shadow: 0 0 0 3px rgba(90, 71, 58, 0.25);
+}
+
+/* buttons */
+.btn {
+  appearance: none;
+  border: none;
+  background: linear-gradient(180deg, var(--oak), #4d3f34);
+  color: var(--white);
+  border-radius: 999px; /* pill shape */
+  padding: 12px 18px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(90, 71, 58, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(90, 71, 58, 0.45);
+  filter: brightness(1.02);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 16px rgba(90, 71, 58, 0.35);
+}
+
+/* results */
+.results {
+  margin-top: 14px;
+  padding: 14px 12px;
+  background: rgba(221, 217, 214, 0.08);
+  border: 1px dashed rgba(221, 217, 214, 0.35);
+  border-radius: var(--radius-md);
+  min-height: 52px;
+}
+
+/* brewery list */
+.brew-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.brew-list li {
+  padding: 10px 12px;
+  background: rgba(199, 189, 177, 0.18);
+  border: 1px solid rgba(199, 189, 177, 0.35);
+  border-radius: var(--radius-md);
+}
+
+.brew-list li strong {
+  color: var(--white);
+  font-weight: 700;
+}
+
+.brew-list a {
+  color: var(--linen);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  opacity: 0.9;
+}
+
+.brew-list a:hover {
+  opacity: 1;
+}
+
+/* loading spinner  */
+.dash-spinner * {
+  border-color: var(--linen) !important;
+}
+
+/* stack columns on smaller screens */
+@media (max-width: 900px) {
+  .row-2 {
+    grid-template-columns: 1fr;
+  }
+}
 
 
 
@@ -76,4 +276,5 @@
     font-size: 0.95rem;
     color: #495057;
     line-height: 1.5;
+
 }
