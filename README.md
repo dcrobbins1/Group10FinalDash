@@ -52,8 +52,8 @@ Returned Fields:
 ## AI Statement:
 Generative AI (ChatGPT) was used to assist with:
 - Brainstorming the overall structure and layout of the multi-page Dash app
-- Writing callbacks for recipe search and nutrition chart functionality
+- Writing callbacks for recipe search and brewery search functionality
 - Designing helper functions to fetch and process API data
 - Formatting page layouts and styling with Dash/Bootstrap components
-- Troubleshooting import and page routing issues
+- Troubleshooting coding issues
 All code was reviewed, tested, and modified by the team to ensure correctness and understanding.
