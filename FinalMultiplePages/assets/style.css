@@ -282,50 +282,48 @@ body {
 
 
 
-/* Home page: full-width, left-aligned */
+/* Home page — centered block, dark theme */
 #home {
-  /* layout */
-  margin: 0;              /* remove centering */
-  max-width: 100%;        /* don't constrain width */
-  width: 100%;
+  /* center the card horizontally */
+  max-width: 880px;
+  margin: 40px auto;          /* <- centers the container */
   padding: 40px;
 
-  /* visuals (optional, keep if you like) */
-  background-color: #f8f9fa;
-  color: #212529;
+  /* visuals */
+  background-color: #111827;  /* dark slate */
+  color: #e5e7eb;             /* light text */
   font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  border: 1px solid #374151;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.03);
 
-  /* override any inherited centering from Bootstrap parents */
-  text-align: left !important;
+  text-align: left;           /* keep text left-aligned */
 }
 
 #home > h2 {
-  font-size: 36px;        /* px per your preference */
-  font-weight: 600;
+  font-size: 36px;
+  font-weight: 700;
   margin-bottom: 20px;
-  text-align: left !important;
-  color: #343a40;
+  color: #f8fafc;
 }
 
 #home > p {
   margin: 0;
   line-height: 1.6;
   font-size: 18px;
-  color: #212529;
+  color: #cbd5e1;
 }
 
-/* gentle spacing for the stacked lines */
-#home > p:nth-of-type(2),
-#home > p:nth-of-type(3) {
-  margin-top: 6px;
-}
+/* spacing between the stacked lines */
+#home > p + p { margin-top: 6px; }
 
 /* subtext line */
 #home > p:last-of-type {
   margin-top: 12px;
   font-size: 16px;
-  color: #495057;
+  color: #94a3b8;
 }
+
 
 
 
@@ -389,4 +387,5 @@ body {
   line-height: 1.6;
   opacity: 0.9;
 }
+
 
