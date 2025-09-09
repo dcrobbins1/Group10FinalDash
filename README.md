@@ -11,43 +11,51 @@ The app has three sections:
 2. **Recipes Page** – Input an ingredient to see a list of recipes.
 3. **Breweries Page** – Enter a city to view breweries nearby, along with interactive visualizations.
 
-## Data Sources and Data Dictionary
-1. Recipes Data
-- Source: [TheMealDB API](https://www.themealdb.com/api.php)
-API Endpoints used:
-/filter.php?i=<ingredient> — Returns a list of recipes containing the ingredient.
-/lookup.php?i=<meal_id> — Returns detailed information for a specific recipe.
+## Data Sources & Data Dictionary
 
-Returned Fields:
-| Field                              | Description                                   |
-| ---------------------------------- | --------------------------------------------- |
-| `idMeal`                           | Unique ID for the recipe                      |
-| `strMeal`                          | Name of the recipe                            |
-| `strMealThumb`                     | URL of the recipe image                       |
-| `strCategory`                      | Category of the meal (e.g., Dessert, Seafood) |
-| `strArea`                          | Cuisine origin (e.g., Italian, Mexican)       |
-| `strInstructions`                  | Step-by-step cooking instructions             |
-| `strYoutube`                       | Optional YouTube link for recipe video        |
-| `strIngredient1`–`strIngredient20` | Ingredients used in the recipe                |
-| `strMeasure1`–`strMeasure20`       | Amounts for each ingredient                   |
+### 1. Recipes Data
 
-2. Brewery Data
-- Source: [Open Brewery DB API](https://www.openbrewerydb.org/)
-- Endpoint(s) used:
-- To search by city: /breweries?by_city=<city>
-- To sort by distance: /breweries?by_dist=<lat,lon>
+- **Source:** [TheMealDB API](https://www.themealdb.com/api.php)  
+- **API Endpoints used:**  
+  - `/filter.php?i=<ingredient>` — Returns a list of recipes containing the ingredient.  
+  - `/lookup.php?i=<meal_id>` — Returns detailed information for a specific recipe.  
 
-Returned Fields:
-| Field          | Description                                      |
-| -------------- | ------------------------------------------------ |
-| `id`           | Unique ID of the brewery                         |
-| `name`         | Brewery name                                     |
-| `city`         | City where brewery is located                    |
-| `state`        | State where brewery is located                   |
-| `website_url`  | URL of the brewery website (if available)        |
+- **Returned Data Fields:**
+
+| Field | Description |
+|-------|-------------|
+| `idMeal` | Unique ID for the recipe |
+| `strMeal` | Name of the recipe |
+| `strMealThumb` | URL of the recipe image |
+| `strCategory` | Category of the meal (e.g., Dessert, Seafood) |
+| `strArea` | Cuisine origin (e.g., Italian, Mexican) |
+| `strInstructions` | Step-by-step cooking instructions |
+| `strYoutube` | Optional YouTube link for recipe video |
+| `strIngredient1`–`strIngredient20` | Ingredients used in the recipe |
+| `strMeasure1`–`strMeasure20` | Amounts for each ingredient |
+
+---
+
+### 2. Brewery Data
+
+- **Source:** [Open Brewery DB API](https://www.openbrewerydb.org/)  
+- **API Endpoints used:**  
+  - `/breweries?by_city=<city>` — Returns breweries in a specific city.  
+  - `/breweries?by_dist=<latitude,longitude>` — Returns breweries sorted by distance.  
+
+- **Returned Data Fields:**
+
+| Field | Description |
+|-------|-------------|
+| `id` | Unique ID of the brewery |
+| `name` | Brewery name |
+| `city` | City where brewery is located |
+| `state` | State where brewery is located |
+| `website_url` | URL of the brewery website (if available) |
 | `brewery_type` | Type of brewery (e.g., micro, brewpub, planning) |
-| `latitude`     | Latitude of brewery location                     |
-| `longitude`    | Longitude of brewery location                    |
+| `latitude` | Latitude of brewery location |
+| `longitude` | Longitude of brewery location |
+
 
 ## AI Statement:
 Generative AI (ChatGPT) was used to assist with:
