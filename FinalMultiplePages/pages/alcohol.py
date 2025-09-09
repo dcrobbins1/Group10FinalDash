@@ -6,27 +6,37 @@ from pathlib import Path
 
 register_page(__name__, path="/alcohol", name="Alcohol Stats")
 
-# ---------- Load and Prepare Data ----------
-DataPath = Path(__file__).resolve().parent.parent/"data"/"drinks.csv"
+# Load Data
+DataPath = Path(__file__).resolve().parent.parent / "data" / "drinks.csv"
 df = pd.read_csv(DataPath)
 
+# Convert litres to gallons
 df["total_gallons"] = df["total_litres_of_pure_alcohol"] * 0.264172
 
+# Get top 10 countries by alcohol consumption
+top10 = df.sort_values("total_gallons", ascending=False).head(10)
+
+# Check if United States is in top 10
+us_row = df[df["country"] == "USA"]
+if not us_row.empty and "USA" not in top10["country"].values:
+    top10 = pd.concat([top10, us_row])
+
+# Rebuild chart with filtered data
 fig = px.bar(
-    df.sort_values("total_gallons", ascending=False),
+    top10.sort_values("total_gallons", ascending=False),
     x="country",
     y="total_gallons",
-    title="Alcohol Consumption by Country (Gallons)",
+    title="Top Alcohol Consuming Countries + USA (Gallons)",
     labels={"total_gallons": "Gallons of Pure Alcohol"},
     height=600
 )
 
-# ---------- Layout ----------
+# Layout
 layout = html.Div([
     html.H2("Alcohol Consumption Around the World", className="heading"),
 
     html.P(
-        "This chart shows the average annual alcohol consumption per person by country, converted to gallons.",
+        "This chart shows the top 10 countries by average annual alcohol consumption per person, plus the United States, converted to gallons.",
         className="info-paragraph"
     ),
 
