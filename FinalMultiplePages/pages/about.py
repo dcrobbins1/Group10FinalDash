@@ -29,7 +29,7 @@ layout = html.Div(
                     children=[
                         html.Img(src="Group10FinalDash/FinalMultiplePages/assets/RG.jpg", className="team-photo"),
                         html.H3("Redeemer Gawu", className="team-name"),
-                        html.P("xxx", className="team-bio"),
+                        html.P("Redeemer is an MSBA student at William & Mary's Raymond A. Mason School of Business. Redeemer completed his Bachelor of Science in Business Administration degree at Kwame Nkrumah University of Science and Technology in 2018 where he majored in Accounting. He went further to attain a Master's degree in financial economics at Ohio University in 2022.", className="team-bio"),
                     ],
                 ),
 
